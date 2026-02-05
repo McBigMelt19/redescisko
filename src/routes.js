@@ -5,6 +5,7 @@ const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Tables = React.lazy(() => import('./views/base/tables/Tables'))
 const FormControl = React.lazy(() => import('./views/forms/form-control/FormControl'))
 const lienzo = React.lazy(() => import('./views/pages/lienzo'))
+const sidebar = React.lazy(() => import('./views/pages/sidebar'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -12,6 +13,7 @@ const routes = [
   { path: '/tables', name: 'Tables', element: Tables },
   { path: '/forms', name: 'Forms', element: FormControl },
   { path: '/lienzo', name: 'Lienzo', element: lienzo },
+  { path: '/sidebar', name: 'Sidebar', element: sidebar }
 ]
 
 export default routes
